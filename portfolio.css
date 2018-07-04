@@ -8,12 +8,14 @@
         flex-wrap: wrap;
         clear: right;
         float: right;
+        margin-right: 10%
     }
     h1 {
         float: right;
         clear: right;
         color: #2d3c49;
         font-family: sans-serif;
+        margin-right: 10%;
     }
     h2{
         float: right;
@@ -27,8 +29,30 @@
     .contained {
         margin: 10px;
         color: #2d3c49;
+
     }
-    img {
+    #me {
         float: right;
         clear: right;
+        max-width: 100%;
+        margin-top: 1%;
+        
     } 
+#logo {
+    float:left;
+    margin-left: 12%;
+}
+hr {
+    clear: right;
+    float: right;
+    color: #7d97ad;
+    width: 75%;
+    margin-right: 10%
+}
+span {
+    clear: right;
+    float: right;
+    color: #7d97ad;
+    margin-right: 10%;
+        
+}
