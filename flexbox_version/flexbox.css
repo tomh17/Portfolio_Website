@@ -1,0 +1,59 @@
+.page-container {
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: flex-end;
+    max-width: 100%;
+    
+}
+
+h1 {
+    font-size: 1.85em;
+    margin-bottom: 1px;
+    color: #2d3c49;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 1.40em;
+}
+.heading {
+    flex-flow: column wrap;
+    width: 40%;
+    margin: auto;
+    color: #2d3c49;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+.logo {
+    margin-top: 2.5%;
+    width: 55%;
+    margin: auto;
+}
+
+.row1 {
+    max-width: 100%;
+    flex-flow: row wrap;
+}
+
+.line {
+    width: 90%;
+    margin: auto;
+    order= 3;
+}
+
+
+
+
+.projects {        /*All code below this works perfectly*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.slot, .rockies, .white_sands {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
