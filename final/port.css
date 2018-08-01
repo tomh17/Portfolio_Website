@@ -1,98 +1,101 @@
 
-* {
+* { /*uses border box on entire page */
     box-sizing: border-box;
 }
-header {
+header { /*when page is less than than 780px it centers the header */
     text-align: center;
     margin-bottom: 20px;
-    margin-top: 20px
+    margin-top: 20px;
 }
-.header-name, .caption {
+.header-name, .caption {  /*the header name and the captions underneath each image have the 
+                            same font family, and font styling */
     font-family: sans-serif, Arial, Verdana;
     text-transform: uppercase;
     color: #2d3c49;
 }
 
-h1 {
-    margin-top: 0px;
+h1 {        /* used a margin on the top and bottom to make the logo and header look even */
+    margin-top: 20px;
     margin-bottom: 10px;
-    font-size: 10vh;  
+    font-size: 3em;  
+    
 }
-.caption {
-    font-size: 4vh;
+.caption { /*used a responsive font-size so it adjusts with screen size */
+    font-size: 1.25em;
 }
 
-.header-text, .links {
+.header-text, .links { /*links and header text have same font, color, and sizing */
     font-family: sans-serif, Arial, Verdana;
     color: #2d3c49;
-    font-size: 3vh;
+    font-size: 1em;
 }
-hr {
+hr { /* line separates the header from the main content. */
     width: 100%;
     height: 5px;
     background-color: #7d97ad;
-    color: #7d97ad;
+    margin-bottom: 30px;
 }
-.mountain {
-    max-width: 90%;
+.mountain { /* while image is in screen size less than 780px it is centered on the page*/
+    max-width: 100%;
     width: 100%;
     text-align: center;
 }
-.responsive-img {
+.responsive-img { /*styling allows each image within the main content to be responsive.  */
     max-width: 100%;
     margin: auto;
     text-align: center;
 }
 
-.content-header {
+.content-header { /*font and size of featured content header is responsive*/
     color: #7d97ad;
-    font-family: sans-serif, Arial, Verdana,;
-    text-transform: uppercase;
-    font-size: 6vh;
+    font-family: sans-serif, Arial, Verdana;
+    font-size: 2.5em;
 }
-main {
+main { /*aligns main content. This is good because it allows the page to be responsive from a mobile phone outwards (If the page size is less than 780px it centers the main content*/
     text-align: center;
 }
 
 
 
-@media only screen and (min-width:720px) {
-    .featured-work {
+@media only screen and (min-width:780px) {  /*media query for any screen larger than 780px */
+    .featured-work { /* when page is larger than 780px it uses flexbox to adjust the images, captions, and links to situate next to one another */
         display: flex;
         flex-direction: row;
         max-width: 100%;
     }
-    .links_and_images {
+    .links_and_images { /*allows the content of the featured work box to situate next to one another while creating a margin on the left and right side of the content */
         display: flex;
         margin-right: 10px;
         margin-left: 10px;
     }
-    .work {
-        margin: 5px;
+    .work { /*gives space between each image so it doesn't look so packed in */
+        margin: 10px;
     }
-    .header {
+    header {  /* changes the formatting of the header from cengtered to where the Udacity logo and the header title and text while sit adjacent to one another */
         display: flex;
-        max-width: 90%;
+        max-width: 100%;
     }
-    .logo_and_text {
+    .logo_and_text { /*allows header content to sit adjacent to one another*/
         display: flex;
         justify-content: space-between;
         margin-right: 25px;
         margin-left: 25px;
     }
 
-    .main-image {
+    .main-image {   /*in the mockup, I can't tell if this image is supposed to take up the entirety of the page or if it is supposed to sit on the right side of the page. I thought it would look better if it took up 100% (although it is a little pixelated) but I thought this was better than it having an akward amount of open space on one side. */
         display: flex;
         align-content: flex-end;
         justify-content: flex-end;
         max-width: 100%;
         width: 100%;
-        margin-right:
+        margin-top: 30px;
     }
-    .content-header {
+    .content-header { /*if the page is larger than 780px it pushes the header to the left and above the first image within .links_andi_images like how it is done in the mockup */
         display: flex;
         justify-content: flex-start;
         margin-left: 25px;
     }
-  
+  .header-title, .header-text { /*if page is larger than 780px it aligns the text to the right */
+    text-align: right;
+}
 }
